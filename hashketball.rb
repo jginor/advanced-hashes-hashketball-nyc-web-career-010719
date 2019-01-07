@@ -210,3 +210,17 @@ def big_shoe_rebounds
 end
 
 big_shoe_rebounds
+
+def num_points_scored(name)
+  answer = nil
+  game_hash.each do |team, team_info_hash|
+    players_hash =  team_info_hash[:players]
+    players_hash.each do |player_details_hash|
+      if player_details_hash[:name] == name
+    end
+  end
+end
+
+def home_team(data,type)
+  data[type]["team_name"]
+end
